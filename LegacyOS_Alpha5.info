@@ -3380,7 +3380,7 @@ while true do\
         file.close()\
         image.close()\
 \
-        settings.set(boot.addNewItem, {name = \"LegacyOS update \"..info.OSversion, path = \"/Temp/updater.lua\", args = \"/Temp/img\"..info.OSversion..\".info\"})\
+        settings.set("boot.addNewItem", {name = \"LegacyOS update \"..info.OSversion, path = \"/Temp/updater.lua\", args = \"/Temp/img\"..info.OSversion..\".info\"})\
         settings.save(\".settings\")\
       end\
 \
